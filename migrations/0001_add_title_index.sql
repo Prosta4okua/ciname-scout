@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX IF NOT EXISTS "idx_title_unique" ON "film" USING btree (lower("title"));
