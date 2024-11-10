@@ -9,7 +9,7 @@ const dbConfig = {
 	port: Number.parseInt(process.env.DB_PORT || "5432"),
 };
 
-const pathToBackupFile = path.resolve(__dirname, "../dvdrental.tar");
+const pathToBackupFile = path.resolve(__dirname, "./dvdrental.tar");
 
 const runPgRestore = (filePath: string) => {
 	const env = { ...process.env, PGPASSWORD: dbConfig.password };
